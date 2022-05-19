@@ -14,16 +14,20 @@
   <body>
    <center>
 <!-- Adding a JavaScript button that calculates the product of two positive integers using only addition in a for loop -->
-    <h1>Product calculation using a For Loop in PHP</h1>
-		<h3>This program will calculate the product of two positive integers only using addition in a For loop.</h3>
+    <?php
+    echo "<h1>Product calculation using a For Loop in PHP</h1>";
+    ?>
+    <?php
+		echo "<h3>This program will calculate the product of two positive integers only using addition in a For loop.</h3>";
+    ?>
 		<table>
 			<tr align = "center">
 				<td valign="top" align="right">					
 								<form action="./results.php" method="post" target="results">
 						<label for="userNum">Enter a positive integer:</label>
-						<input type="number" step="1" name="firstNum"><br><br>		
+						<input type="number" step="1" min="0" name="firstNum"><br><br>		
             <label for="userNum">Enter a second positive integer:</label>
-						<input type="number" step="1" name="secondNum"><br><br>		
+						<input type="number" step="1" min="0" name="secondNum"><br><br>		
 						<input type="submit" value="Calculate product">
 					</form>
 				</td>
